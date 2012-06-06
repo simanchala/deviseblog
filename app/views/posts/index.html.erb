@@ -1,0 +1,41 @@
+<h1>Listing posts</h1>
+<%= paginate @posts %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <td></td>
+    <th>Title</th>
+    <td></td>
+
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><h3><%=  post.name %></h3></td>
+    <td>   </td>
+    <td><b><%= post.title %></b></td>
+    <td></td>
+    <td><%= post.content %></td>
+  </tr>
+  <tr>
+
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td><h2>Comments</h2> <br><%= render post.comments %></td>
+  </tr>
+  <tr>
+    <td><h2><u><%= link_to 'addcomment', post %></u></h2></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>

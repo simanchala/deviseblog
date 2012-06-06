@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />	
+  <title>Deviseblog</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+	<!--[if IE 6]>
+		<script type="text/javascript" src="unitpngfix.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+    	<div class="logo"><a href="index.html"><%= image_tag "logo.gif" %></a></div>
+    </div>
+    <div id="menu">
+        <ul>                                                                       
+        <li class="selected"><a href="#">home</a></li>
+        <li><%= link_to "blog", posts_path %></li>
+        <li><%= link_to "my profile", posts_cuser_path %></li>
+                                                     
+        </ul>
+        </div> 
+    <div class="tab_bg">    
+        <div class="tab_left">
+    		<%= image_tag "big_icon.png", :class => "big_icon" %>       
+        </div>       
+        <div class="middle_text">
+        	<h1>We grow ideas</h1>
+        	<p>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        	</p>
+        </div>    
+    	<div class="tabs">
+        	<div class="tab">
+            	<%= image_tag "icon1.png", :class => "tab_icon" %>
+            	<p class="tab_text">
+            	<a href="#">Lorem ipsum dolor sit amet</a><br />
+            	Consectetur adipisicing
+            	</p>
+            </div>            
+        	<div class="tab">
+            	<%= image_tag "icon2.png", :class => "tab_icon" %>
+            	<p class="tab_text">
+            		<a href="#">Lorem ipsum dolor sit amet</a><br />
+            		Consectetur adipisicing
+            	</p>
+            </div> 
+        	<div class="tab">
+            	<%= image_tag "icon3.png", :class => "tab_icon" %>
+            	<p class="tab_text">
+            		<a href="#">Lorem ipsum dolor sit amet</a><br />
+            		Consectetur adipisicing
+            	</p>
+            </div>  
+        </div>
+    	<div class="clear"></div>
+    </div>
+    
+    <div class="center_content">
+    	<div class="left_content">
+    	<p class="notice"><%= notice %></p>
+			<div id="user_nav">
+				<% if user_signed_in? %> 
+					Signed in as <%= current_user.email %>. Not you?
+					<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+				<% else %>
+					<%= link_to "Sign in  ", new_user_session_path %> or 
+					<%= link_to "Sign up", new_user_registration_path %>
+				<% end %>
+			</div>        
+	    		<font color="red">
+	        		<p class="alert"><%= alert %></p>	
+	        	</font>   
+    		<%= yield %>
+    		
+        <div class="clear"></div>   
+    </div>
+    
+     <div id="footer">
+    	<div class="footer_links">                      
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">clients</a>
+            <a href="#">projects</a>
+            <a href="#">request a quote </a>
+            <a href="#">get in touch</a>         
+        </div>
+        
+     	<div class="copyright">
+			<a href="http://csstemplatesmarket.com"><%= image_tag "csstemplatesmarket.gif" %></a>
+        </div>    
+    
+    </div> 
+
+</div>
+ 
+ 
+</body>
+</html>
