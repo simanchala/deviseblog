@@ -41,6 +41,5 @@ end
 gem 'execjs'
 gem 'therubyracer'
 group :production do
-  gem 'pg'
   gem 'heroku'
 end
