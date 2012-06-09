@@ -26,6 +26,4 @@ production:
   adapter: mysql
   database: deviseblog_production
   pool: 5
-  username: root
-  password: sima
   timeout: 5000
