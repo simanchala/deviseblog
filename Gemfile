@@ -40,7 +40,7 @@ group :test do
 end
 gem 'execjs'
 gem 'therubyracer'
-gem 'heroku'
 group :production do
-  gem 'thin'
+  gem 'pg'
+  gem 'heroku'
 end
