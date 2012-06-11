@@ -161,7 +161,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   coffee-rails (~> 3.1.1)
-  devise
+  devise (= 1.5.3)
   execjs
   friendly_id
   hirb

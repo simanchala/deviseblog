@@ -6,7 +6,7 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql'
-gem 'devise'
+gem 'devise','1.5.3'
 gem 'kaminari'
 gem 'friendly_id'
 gem 'activeadmin'
