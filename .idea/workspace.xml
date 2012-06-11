@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e6e1f7-1593-40e8-a082-8049d5a6668b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="deviseblog.iws" />
@@ -29,7 +27,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="18" selection-start="341" selection-end="341" vertical-scroll-proportion="0.24324325">
+            <state line="19" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.30810812">
               <folding />
             </state>
           </provider>
@@ -487,7 +485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="341" selection-end="341" vertical-scroll-proportion="0.24324325">
+        <state line="19" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="0.30810812">
           <folding />
         </state>
       </provider>
